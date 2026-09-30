@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarawak Tours | Discover Borneo</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div data-role="page" id="home">
+<div data-role="header" data-position="fixed" class="main-header">
+<h1>🌿 Sarawak Tours</h1>
+<a href="#menuPanel" class="ui-btn ui-btn-right ui-icon-bars ui-btn-icon-notext menu-button">Menu</a>
+</div>
+
+<div data-role="panel" id="menuPanel" data-display="overlay" data-theme="a" class="side-menu">
+<div class="menu-logo"><div class="logo-icon">🌿</div><h2>Sarawak Tours</h2><p>Discover Borneo</p></div>
+<ul data-role="listview">
+<li><a href="#home">🏠 Home</a></li>
+<li><a href="#packages">🗺️ Tour Packages</a></li>
+<li><a href="#booking">📋 Booking</a></li>
+<li><a href="#contact">📞 Contact Us</a></li>
+</ul>
+<div class="menu-footer"><p>Explore • Experience • Enjoy</p></div>
+</div>
+
+<div role="main" class="ui-content home-content">
+<section class="hero"><div class="hero-overlay"></div><div class="hero-content">
+<span class="hero-badge">✈️ LET’S EXPLORE SARAWAK</span>
+<h2>Experience<br><span>the Heart of Borneo</span></h2>
+<p>Discover Sarawak in your own way — from beautiful rainforests and unique local traditions to delicious food and exciting adventures. There’s always something new to experience in the Land of the Hornbills.
+</p>
+<div class="hero-buttons"><a href="#packages" class="ui-btn ui-btn-b ui-corner-all primary-button">Explore Packages</a><a href="#booking" class="ui-btn ui-corner-all outline-button">Book Now</a></div>
+</div></section>
+
+<section class="section-heading"><span class="section-label">WHY TRAVEL WITH US</span><h2>Experience Sarawak<br>Like Never Before</h2><p>We make your Sarawak adventure simple, comfortable and memorable.</p></section>
+
+<div class="feature-grid">
+<div class="feature-card"><div class="feature-icon">📍</div><h3>Beautiful Destinations</h3><p>Discover rainforests, caves, beaches, rivers and amazing cultural attractions.</p></div>
+<div class="feature-card"><div class="feature-icon">🏷️</div><h3>Affordable Packages</h3><p>Flexible tour packages designed for different budgets and travel styles.</p></div>
+<div class="feature-card"><div class="feature-icon">💳</div><h3>Easy Mobile Booking</h3><p>Browse packages and submit your booking easily from your mobile device.</p></div>
+</div>
+
+<section class="highlight-box"><div class="highlight-content"><span>READY FOR YOUR NEXT ADVENTURE?</span><h2>Your Sarawak Adventure Starts Here.</h2><p>Choose your favourite destination and create memories that last forever.</p><a href="#packages" class="ui-btn ui-btn-b ui-corner-all">View Tour Packages</a></div></section>
+</div>
+<div data-role="footer" class="main-footer"><h4>🌿 Sarawak Tours © 2026</h4><p>Discover • Explore • Experience</p></div>
+</div>
+
+<div data-role="page" id="packages">
+<div data-role="header" data-position="fixed" class="main-header"><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext">Home</a><h1>Tour Packages</h1></div>
+<div role="main" class="ui-content page-content">
+<section class="page-title"><span>OUR EXPERIENCES</span><h2>Choose Your Sarawak Adventure</h2><p>From city exploration to rainforest adventures, find the perfect experience for you.</p></section>
+
+<div class="package-card"><div class="package-image kuching-image"><div class="image-overlay"></div><div class="package-location">📍 KUCHING</div></div><div class="package-content"><h2>Kuching City Explorer</h2><p class="package-description">Discover Kuching's history, food and local culture.</p><div class="package-info"><span class="price">RM 350</span><span class="divider">•</span><span>🕐 3 Days 2 Nights</span></div><div class="package-buttons"><a href="#kuchingPopup" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all">More Info</a><a href="#booking" class="ui-btn ui-btn-b ui-corner-all package-book" data-package="Kuching City Explorer">Book Now</a></div></div></div>
+
+<div class="package-card"><div class="package-image mulu-image"><div class="image-overlay"></div><div class="package-location">📍 MULU</div></div><div class="package-content"><h2>Mulu Adventure</h2><p class="package-description">Experience spectacular caves, rainforest scenery and nature.</p><div class="package-info"><span class="price">RM 650</span><span class="divider">•</span><span>🕐 4 Days 3 Nights</span></div><div class="package-buttons"><a href="#muluPopup" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all">More Info</a><a href="#booking" class="ui-btn ui-btn-b ui-corner-all package-book" data-package="Mulu Adventure">Book Now</a></div></div></div>
+
+<div class="package-card"><div class="package-image bako-image"><div class="image-overlay"></div><div class="package-location">📍 BAKO</div></div><div class="package-content"><h2>Bako National Park</h2><p class="package-description">Enjoy wildlife, hiking trails and beautiful coastal views.</p><div class="package-info"><span class="price">RM 420</span><span class="divider">•</span><span>🕐 3 Days 2 Nights</span></div><div class="package-buttons"><a href="#bakoPopup" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all">More Info</a><a href="#booking" class="ui-btn ui-btn-b ui-corner-all package-book" data-package="Bako National Park">Book Now</a></div></div></div>
+<a href="#booking" class="ui-btn ui-btn-b ui-corner-all full-button">📋 Go to Booking Form</a>
+</div>
+
+<div data-role="popup" id="kuchingPopup" data-overlay-theme="b" class="package-popup"><a href="#" data-rel="back" class="ui-btn ui-btn-right ui-icon-delete ui-btn-icon-notext">Close</a><div class="popup-header"><span>🏙️</span><h2>Kuching City Explorer</h2></div><div class="popup-section"><h3>📍 Destinations</h3><p>Kuching Waterfront, Main Bazaar and Sarawak Museum area.</p></div><div class="popup-section"><h3>🎯 Activities</h3><p>City sightseeing, cultural exploration and local food tasting.</p></div><div class="popup-section"><h3>🏨 Facilities</h3><p>Hotel accommodation, transport and tour guide.</p></div></div>
+<div data-role="popup" id="muluPopup" data-overlay-theme="b" class="package-popup"><a href="#" data-rel="back" class="ui-btn ui-btn-right ui-icon-delete ui-btn-icon-notext">Close</a><div class="popup-header"><span>🏔️</span><h2>Mulu Adventure</h2></div><div class="popup-section"><h3>📍 Destinations</h3><p>Gunung Mulu National Park and selected caves.</p></div><div class="popup-section"><h3>🎯 Activities</h3><p>Cave exploration, jungle trekking and nature photography.</p></div><div class="popup-section"><h3>🏨 Facilities</h3><p>Accommodation, transport, basic meals and guide.</p></div></div>
+<div data-role="popup" id="bakoPopup" data-overlay-theme="b" class="package-popup"><a href="#" data-rel="back" class="ui-btn ui-btn-right ui-icon-delete ui-btn-icon-notext">Close</a><div class="popup-header"><span>🌳</span><h2>Bako National Park</h2></div><div class="popup-section"><h3>📍 Destinations</h3><p>Bako National Park, coastal cliffs and rainforest trails.</p></div><div class="popup-section"><h3>🎯 Activities</h3><p>Hiking, wildlife observation and nature photography.</p></div><div class="popup-section"><h3>🏨 Facilities</h3><p>Transport, accommodation and local guide.</p></div></div>
+<div data-role="footer" class="main-footer"><h4>🌿 Sarawak Tours © 2026</h4></div>
+</div>
+
+<div data-role="page" id="booking">
+<div data-role="header" data-position="fixed" class="main-header"><a href="#packages" class="ui-btn ui-icon-back ui-btn-icon-notext">Back</a><h1>Booking</h1></div>
+<div role="main" class="ui-content page-content"><section class="page-title"><span>PLAN YOUR JOURNEY</span><h2>Book Your Tour</h2><p>Complete the form below and we'll receive your booking request.</p></section>
+<div class="form-card"><form id="bookingForm" novalidate>
+<div id="bookingSuccess" class="success-message"></div><div id="bookingGeneralError" class="error-message"></div>
+<div class="form-group"><label for="bookingName">Full Name *</label><input type="text" id="bookingName" name="bookingName" placeholder="Enter your full name"><div id="bookingNameError" class="field-error"></div></div>
+<div class="form-group"><label for="bookingPhone">Phone Number *</label><input type="tel" id="bookingPhone" name="bookingPhone" placeholder="Example: 0123456789"><div id="bookingPhoneError" class="field-error"></div></div>
+<div class="form-group"><label for="bookingEmail">Email *</label><input type="email" id="bookingEmail" name="bookingEmail" placeholder="example@gmail.com"><div id="bookingEmailError" class="field-error"></div></div>
+<div class="form-group"><label for="travelDate">Travel Date *</label><input type="date" id="travelDate" name="travelDate"><div id="travelDateError" class="field-error"></div></div>
+<div class="form-group"><label for="participants">Number of Participants *</label><input type="number" id="participants" name="participants" min="1" max="50" placeholder="Example: 2"><div id="participantsError" class="field-error"></div></div>
+<div class="form-group"><label for="tourPackage">Tour Package *</label><select id="tourPackage" name="tourPackage"><option value="">-- Select a package --</option><option value="Kuching City Explorer">Kuching City Explorer - RM 350</option><option value="Mulu Adventure">Mulu Adventure - RM 650</option><option value="Bako National Park">Bako National Park - RM 420</option></select><div id="tourPackageError" class="field-error"></div></div>
+<fieldset data-role="controlgroup" class="consent-box"><legend>Ethical Consent *</legend><label for="bookingConsent"><input type="checkbox" id="bookingConsent" name="bookingConsent"> I agree to the privacy policy and responsible use of my submitted information.</label></fieldset>
+<div id="bookingConsentError" class="field-error"></div>
+<button type="submit" class="ui-btn ui-btn-b ui-corner-all form-submit">✓ Submit Booking</button><button type="reset" class="ui-btn ui-corner-all">Clear Form</button>
+</form></div><a href="#home" class="ui-btn ui-corner-all">← Back to Home</a></div>
+<div data-role="footer" class="main-footer"><h4>🌿 Sarawak Tours © 2026</h4></div>
+</div>
+
+<div data-role="page" id="contact">
+<div data-role="header" data-position="fixed" class="main-header"><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext">Home</a><h1>Contact Us</h1></div>
+<div role="main" class="ui-content page-content"><section class="page-title"><span>GET IN TOUCH</span><h2>We're Here to Help</h2><p>Have questions about our packages? Our team is happy to assist you.</p></section>
+<div class="contact-grid"><div class="contact-info-card"><div class="contact-icon">📍</div><h3>Location</h3><p>Kuching, Sarawak</p></div><div class="contact-info-card"><div class="contact-icon">📞</div><h3>Phone</h3><p>012-345 6789</p></div><div class="contact-info-card"><div class="contact-icon">✉️</div><h3>Email</h3><p>info@sarawaktours.example</p></div></div>
+<div class="contact-action"><h2>Have a Question?</h2><p>Send us a message and we'll get back to you.</p><a href="#contactModal" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-b ui-corner-all">💬 Contact Us</a></div>
+<a href="#home" class="ui-btn ui-corner-all">← Back to Home</a></div>
+<div data-role="popup" id="contactModal" data-overlay-theme="b" data-theme="a" data-dismissible="false" class="contact-modal"><div class="modal-header"><h2>💬 Contact Us</h2><a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext">Close</a></div><div class="ui-content"><form id="contactForm" novalidate>
+<div id="contactSuccess" class="success-message"></div><div id="contactGeneralError" class="error-message"></div>
+<div class="form-group"><label for="contactName">Name *</label><input type="text" id="contactName" name="contactName" placeholder="Enter your name"><div id="contactNameError" class="field-error"></div></div>
+<div class="form-group"><label for="contactEmail">Email *</label><input type="email" id="contactEmail" name="contactEmail" placeholder="example@email.com"><div id="contactEmailError" class="field-error"></div></div>
+<div class="form-group"><label for="contactMessage">Message *</label><textarea id="contactMessage" name="contactMessage" rows="5" placeholder="Enter your message"></textarea><div id="contactMessageError" class="field-error"></div></div>
+<fieldset data-role="controlgroup" class="consent-box"><legend>Ethical Consent *</legend><label for="contactConsent"><input type="checkbox" id="contactConsent" name="contactConsent"> I consent to the collection and responsible use of my submitted information.</label></fieldset>
+<div id="contactConsentError" class="field-error"></div><button type="submit" class="ui-btn ui-btn-b ui-corner-all">✓ Send Message</button><a href="#" data-rel="back" class="ui-btn ui-corner-all">Close</a>
+</form></div></div></div>
+<div data-role="footer" class="main-footer"><h4>🌿 Sarawak Tours © 2026</h4></div>
+</div>
+</body></html>
